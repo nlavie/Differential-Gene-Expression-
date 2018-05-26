@@ -1,0 +1,276 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage[iso]{datetime}
+\usepackage{tabu}
+\usepackage{amsthm}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black]{hyperref}
+\usepackage{caption}
+
+\title{Statistics and Data Analysis \\ \large Problem Set 4}
+\date{Due 2017-02-15 \\ Last edited \today}
+\author{Steven Karas - 328620984 \\ Ron Aharoni - 300028065}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\newcommand{\mean}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\begin{document}
+
+\maketitle
+
+\section{Differential Gene Expression in Acute Dengue Patients}
+
+\subsection{Describing The Data}
+
+\paragraph{How many samples in total?}
+
+There are 56 blood samples in the data set.
+
+\paragraph{How many samples in each class?}
+
+\ \\
+\begin{tabu} to \linewidth {c|c}
+  Class & Number of Samples \\
+  \hline
+  Healthy & 9 \\
+  Convalescent & 19 \\
+  Dengue Hemorrhagic Fever & 10 \\
+  Dengue Fever & 18 \\
+  \hline
+  Total & 56
+\end{tabu}
+
+\paragraph{How many genes profiled? (if there are missing values, then remove the entire row from the data matrix)}
+
+54715 genes.
+
+\subsection{Differential Expression}
+
+Determine the statistical significance of differential expression (DE) observed for each gene in Healthy vs Fever as well as for two other class comparisons. Perform the analysis in two versions:
+
+\paragraph{Evaluating the DE in either direction (two-tailed tests)}
+
+\paragraph{Evaluating the DE in both one-sided version. That is, for example: consider genes overexpressed in Fever vs Healthy and separately genes underexpressed in Fever vs Healthy}
+
+\subsection{Plots and Conclusions}
+
+Construct the DE over abundance plots for the above comparisons.
+State, for each comparison, the number of genes, i, at which we observe.
+If these events are not observed at any i, then make that statement.
+
+\paragraph{FDR = 0.05}
+
+\paragraph{FDR = 0.1}
+
+\paragraph{Select 3 differentially expressed genes and produce a graphical representation of their expression patterns that demonstrates the observed DE.}
+
+\clearpage
+\subsection{Healthy vs Convalescent}
+
+FDR corrected analysis using ttest:
+
+\begin{itemize}
+  \item 14 genes overexpressed with p < 0.05
+  \item 1 gene underexpressed with p < 0.05
+  \item 5 genes differentially expressed with p < 0.05
+  \item 274 genes overexpressed with p < 0.1
+  \item 1 genes underexpressed with p < 0.1
+  \item 61 genes differentially expressed with p < 0.1
+\end{itemize}
+
+\paragraph{Overabundance plots}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/c2h_1-pvalue.png}
+  \caption{Convalescent vs Healthy Over-expression}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/h2c_1-pvalue.png}
+  \caption{Healthy vs Convalescent Over-expression}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/h2c_2-pvalue.png}
+  \caption{Healthy vs Convalescent Differential expression}
+\end{figure}
+
+\paragraph{3 most significant genes}
+
+\begin{itemize}
+  \item 209007\_PM\_s\_at
+  \item 243796\_PM\_at
+  \item 200722\_PM\_s\_at
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/significant-2-fdr_h2c.png}
+  \caption{Healthy vs Convalescent significant DE genes}
+\end{figure}
+
+\clearpage
+\subsection{Healthy vs Hemorrhagic}
+
+FDR corrected analysis using ttest:
+
+\begin{itemize}
+  \item 7515 genes overexpressed with p < 0.05
+  \item 6932 genes underexpressed with p < 0.05
+  \item 14448 genes differentially expressed with p < 0.05
+  \item 9346 genes overexpressed with p < 0.1
+  \item 8512 gene underexpressed with p < 0.1
+  \item 17851 genes differentially expressed with p < 0.1
+\end{itemize}
+
+\paragraph{Overabundance plots}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/hm2h_1-pvalue.png}
+  \caption{Hemorrhagic to Healthy Over-expression}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/h2hm_1-pvalue.png}
+  \caption{Healthy to Hemorrhagic Over-expression}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/h2hm_2-pvalue.png}
+  \caption{Healthy to Hemorrhagic Differential expression}
+\end{figure}
+
+\paragraph{3 most significant genes}
+
+\begin{itemize}
+  \item 212221\_PM\_x\_at
+  \item 203396\_PM\_at
+  \item 212708\_PM\_at
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/significant-2-fdr_h2hm.png}
+  \caption{Healthy vs Hemorrhagic significant DE genes}
+\end{figure}
+
+\clearpage
+\subsection{Healthy vs Fever}
+
+FDR corrected analysis using ttest:
+
+\begin{itemize}
+  \item 6269 genes overexpressed with p < 0.05
+  \item 6775 gene underexpressed with p < 0.05
+  \item 13057 genes differentially expressed with p < 0.05
+  \item 7955 genes overexpressed with p < 0.1
+  \item 8023 gene underexpressed with p < 0.1
+  \item 15977 genes differentially expressed with p < 0.1
+\end{itemize}
+
+\paragraph{Overabundance plots}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/f2h_1-pvalue.png}
+  \caption{Fever to Healthy Over-expression}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/h2f_1-pvalue.png}
+  \caption{Healthy to Fever Over-expression}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/h2f_2-pvalue.png}
+  \caption{Healthy to Fever Differential expression}
+\end{figure}
+
+\paragraph{3 most significant genes}
+
+\begin{itemize}
+  \item 219313\_PM\_at
+  \item 201761\_PM\_at
+  \item 208805\_PM\_at
+\end{itemize}
+
+\begin{figure}
+  \includegraphics[width=\textwidth]{./expression/significant-2-fdr_h2f.png}
+  \caption{Healthy vs Fever significant DE genes}
+\end{figure}
+
+\clearpage
+\section{Wilcoxon Rank Sum}
+
+The purpose of this exercise is to practice the use of normal tables to perform WRS p-value calculations.
+For each of the measured data vectors $Mi$ tabulated do the following:
+
+\subsection{}
+Compute the value of WRS statistic for the samples labeled with 1.
+
+\paragraph{Answer}
+Let $T =$ sum of the ranks of the entries labeled $1$.
+
+\begin{tabu} to \linewidth {|c|c|c|c|c|}
+  \hline
+  M1 & M2 & M3 & M4 & M5 \\
+  \hline
+  66 & 47.5 & 24.0 & 61.0 & 56.0 \\
+  \hline
+\end{tabu}
+
+\subsection{}
+Use the transformation to normal described in Class 11 to obtain a transformed WRS statistic, $Z$
+
+\paragraph{Answer}
+\[\mu_T=\frac{B(N+1)}{2}\]
+\[\sigma_T=\sqrt{\frac{B(N-B)(N+1)}{12}}\]
+\[Z(T)=\frac{T-\mu_T}{\sigma_T} \sim N(0,1)\]
+
+\begin{tabu} to \linewidth {|c|c|c|c|c|}
+  \hline
+  M1 & M2 & M3 & M4 & M5 \\
+  \hline
+  2.66 & 0.57 & -2.10 & 2.10 & 1.53 \\
+  \hline
+\end{tabu}
+
+\subsection{}
+Use standard normal tables to determine the p-value at which we can state that "the values that would be measured for samples from the population labeled 1 have higher ranks than those that would be measured for the population labeled in 0"
+
+\paragraph{Answer}
+Please note that this is a one-sided p-value that has been requested:
+
+% TODO: include the formula we used (scipy.stats.norm.sf(Z))
+
+\begin{tabu} to \linewidth {|c|c|c|c|c|}
+  \hline
+  M1 & M2 & M3 & M4 & M5 \\
+  \hline
+  0.004 & 0.286 & 0.982 & 0.018 & 0.063 \\
+  \hline
+\end{tabu}
+
+\subsection{}
+Which of your findings survive a Bonferroni correction requiring $p<0.05$?
+
+\paragraph{Answer}
+Given that we have tested 5 related samples, it follows that we should evaluate the p-values with a Bonferroni correction of 5:
+
+\begin{tabu} to \linewidth {|c|c|c|c|c|}
+  \hline
+  M1 & M2 & M3 & M4 & M5 \\
+  \hline
+  0.019 & 1.428 & 4.910 & 0.090 & 0.315 \\
+  \hline
+\end{tabu}
+
+The only result that is statistically significant after Bonferroni correction is the claim that M1 is larger for populations labelled with 1 than those for populations labelled with 0.
+
+% \bibliographystyle{plain}
+% \bibliography{biblio}{}
+
+\end{document}

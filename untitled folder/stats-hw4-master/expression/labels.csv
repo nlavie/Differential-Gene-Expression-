@@ -1,0 +1,57 @@
+id,infection,disease_state,individual,title
+GSM1253079,control,healthy control,c1,Healthy control c1
+GSM1253083,control,healthy control,c2,Healthy control c2
+GSM1253075,control,healthy control,c3,Healthy control c3
+GSM1253077,control,healthy control,c4,Healthy control c4
+GSM1253076,control,healthy control,c5,Healthy control c5
+GSM1253078,control,healthy control,c6,Healthy control c6
+GSM1253081,control,healthy control,c7,Healthy control c7
+GSM1253080,control,healthy control,c8,Healthy control c8
+GSM1253082,control,healthy control,c9,Healthy control c9
+GSM1253056,Dengue virus,Convalescent,patient 3,Convalescent Patient 3
+GSM1253057,Dengue virus,Convalescent,patient 4,Convalescent Patient 4
+GSM1253058,Dengue virus,Convalescent,patient 6,Convalescent Patient 6
+GSM1253059,Dengue virus,Convalescent,patient 33,Convalescent Patient 33
+GSM1253060,Dengue virus,Convalescent,patient 34,Convalescent Patient 34
+GSM1253061,Dengue virus,Convalescent,patient 35,Convalescent Patient 35
+GSM1253062,Dengue virus,Convalescent,patient 36,Convalescent Patient 36
+GSM1253063,Dengue virus,Convalescent,patient 37,Convalescent Patient 37
+GSM1253064,Dengue virus,Convalescent,patient 38,Convalescent Patient 38
+GSM1253065,Dengue virus,Convalescent,patient 39,Convalescent Patient 39
+GSM1253066,Dengue virus,Convalescent,patient 41,Convalescent Patient 41
+GSM1253067,Dengue virus,Convalescent,patient 44,Convalescent Patient 44
+GSM1253068,Dengue virus,Convalescent,patient 45,Convalescent Patient 45
+GSM1253069,Dengue virus,Convalescent,patient 47,Convalescent Patient 47
+GSM1253070,Dengue virus,Convalescent,patient 48,Convalescent Patient 48
+GSM1253071,Dengue virus,Convalescent,patient 49,Convalescent Patient 49
+GSM1253072,Dengue virus,Convalescent,patient 54,Convalescent Patient 54
+GSM1253073,Dengue virus,Convalescent,patient 55,Convalescent Patient 55
+GSM1253074,Dengue virus,Convalescent,patient 80,Convalescent Patient 80
+GSM1253032,Dengue virus,Dengue Hemorrhagic Fever,patient 32,Dengue Hemorrhagic Fever Patient 32
+GSM1253034,Dengue virus,Dengue Hemorrhagic Fever,patient 34,Dengue Hemorrhagic Fever Patient 34
+GSM1253039,Dengue virus,Dengue Hemorrhagic Fever,patient 38,Dengue Hemorrhagic Fever Patient 38
+GSM1253040,Dengue virus,Dengue Hemorrhagic Fever,patient 39,Dengue Hemorrhagic Fever Patient 39
+GSM1253041,Dengue virus,Dengue Hemorrhagic Fever,patient 40,Dengue Hemorrhagic Fever Patient 40
+GSM1253046,Dengue virus,Dengue Hemorrhagic Fever,patient 45,Dengue Hemorrhagic Fever Patient 45
+GSM1253048,Dengue virus,Dengue Hemorrhagic Fever,patient 48,Dengue Hemorrhagic Fever Patient 48
+GSM1253049,Dengue virus,Dengue Hemorrhagic Fever,patient 49,Dengue Hemorrhagic Fever Patient 49
+GSM1253052,Dengue virus,Dengue Hemorrhagic Fever,patient 60,Dengue Hemorrhagic Fever Patient 60
+GSM1253037,Dengue virus,Dengue Hemorrhagic Fever,patient 81,Dengue Hemorrhagic Fever Patient 81
+GSM1253028,Dengue virus,Dengue Fever,patient 3,Dengue Fever Patient 3
+GSM1253029,Dengue virus,Dengue Fever,patient 4,Dengue Fever Patient 4
+GSM1253030,Dengue virus,Dengue Fever,patient 6,Dengue Fever Patient 6
+GSM1253031,Dengue virus,Dengue Fever,patient 7,Dengue Fever Patient 7
+GSM1253033,Dengue virus,Dengue Fever,patient 33,Dengue Fever Patient 33
+GSM1253035,Dengue virus,Dengue Fever,patient 35,Dengue Fever Patient 35
+GSM1253036,Dengue virus,Dengue Fever,patient 36,Dengue Fever Patient 36
+GSM1253038,Dengue virus,Dengue Fever,patient 37,Dengue Fever Patient 37
+GSM1253042,Dengue virus,Dengue Fever,patient 41,Dengue Fever Patient 41
+GSM1253045,Dengue virus,Dengue Fever,patient 44,Dengue Fever Patient 44
+GSM1253043,Dengue virus,Dengue Fever,patient 42,Dengue Fever Patient 42
+GSM1253044,Dengue virus,Dengue Fever,patient 43,Dengue Fever Patient 43
+GSM1253047,Dengue virus,Dengue Fever,patient 47,Dengue Fever Patient 47
+GSM1253050,Dengue virus,Dengue Fever,patient 54,Dengue Fever Patient 54
+GSM1253051,Dengue virus,Dengue Fever,patient 55,Dengue Fever Patient 55
+GSM1253053,Dengue virus,Dengue Fever,patient 66,Dengue Fever Patient 66
+GSM1253054,Dengue virus,Dengue Fever,patient 68,Dengue Fever Patient 68
+GSM1253055,Dengue virus,Dengue Fever,patient 80,Dengue Fever Patient 80
